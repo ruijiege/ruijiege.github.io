@@ -1,4 +1,4 @@
 name: Your New Jekyll Site
-markdown: github
+markdown: rdiscount
 permalink: pretty
 pygments: true

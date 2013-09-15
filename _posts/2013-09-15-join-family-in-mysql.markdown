@@ -16,10 +16,10 @@ A natural join is a type of equi-join where the join predicate arises implicitly
 
 ###Inner Join and Outer Join###
 
-~~~java
+{% highlight java %}
 //commints
 public static void main(String[] args){
   int[] a={1,2,3,4,5,6};
   return;
 }
-~~~ 
+{% endhighlight %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Join Operations in MYSQL
-date: 2013-09-15 16:31:00
+date: 2013-09-15 17:33:00
 categories: jekyll update
 ---
 

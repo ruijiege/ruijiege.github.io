@@ -1,4 +1,6 @@
-name: Your New Jekyll Site
+name: Ruijie-Ge Site
 markdown: rdiscount
 permalink: pretty
 pygments: true
+safe: true
+lsi: false

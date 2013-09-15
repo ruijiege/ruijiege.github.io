@@ -30,14 +30,14 @@ FROM table1 T1 natural join table2 T2;
     on T1.id=T2.id;
     {% endhighlight %}
 
-    eqlals
+eqlals
 
     {% highlight mysql %}
     SELECT *
     FROM table1 T1 join  table2 T2 using(id);
     {% endhighlight %}
 
-    equals
+equals
 
     {% highlight mysql %}
     SELECT *
@@ -46,10 +46,10 @@ FROM table1 T1 natural join table2 T2;
     {% endhighlight %}
 
 2.  Self Join
-    The purpose of self join is find a pair of atrributes satisfy a condition, the two attributes are within the same table. There is one thing we should care about: use '<' to eliminate the duplicated tuples.
+The purpose of self join is find a pair of atrributes satisfy a condition, the two attributes are within the same table. There is one thing we should care about: use '<' to eliminate the duplicated tuples.
 
 3.  Outer Join
-    Mysql don't support full outer join, we can use left outer join, right outer join and union to implements full outer join. For example:
+Mysql don't support full outer join, we can use left outer join, right outer join and union to implements full outer join. For example:
 
     {% highlight mysql %}
     SELECT *

@@ -1,4 +1,9 @@
-#  Join Operations in MYSQL
+---
+layout: post
+title:  Join Operations in MYSQL
+date: 2013-09-15 16:31:00
+categories: jekyll update
+---
 
 ###Difference Between Equal Join and Natural Join in Mysql###
 In mysql, *FROM* clause do a cross product between the tables in *FROM* clause. *WHERE* clause add a condition to the query. Tuples only satisfy these conditions can be selected from the cross product table. So, *FROM* \+ *WHERE* clause is equal-join. In mysql:

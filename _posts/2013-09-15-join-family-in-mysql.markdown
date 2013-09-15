@@ -65,8 +65,3 @@ FROM table1 T1 natural join table2 T2;
     SELECT *
     FROM T1 right outer join T2 on T1.id=T2.id
     {% endhighlight %}
-    
-
-
-
-

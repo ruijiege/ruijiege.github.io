@@ -37,7 +37,7 @@ FROM table1 T1 natural join table2 T2;
     {% endhighlight %}
 
 
-    eqlals
+  eqlals
 
 
     {% highlight mysql %}
@@ -46,7 +46,7 @@ FROM table1 T1 natural join table2 T2;
     {% endhighlight %}
 
 
-    equals
+  equals
 
 
     {% highlight mysql %}
@@ -70,7 +70,7 @@ FROM table1 T1 natural join table2 T2;
     {% endhighlight %}
 
 
-    equals
+  equals
 
 
     {% highlight mysql%}

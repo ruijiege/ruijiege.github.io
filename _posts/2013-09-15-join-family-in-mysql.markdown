@@ -28,6 +28,7 @@ FROM table1 T1 natural join table2 T2;
 {% endhighlight %}
 
 ###Inner Join, Self Join and Outer Join###
+
 1.  Inner Join
 
     {% highlight mysql %}
@@ -36,18 +37,14 @@ FROM table1 T1 natural join table2 T2;
     on T1.id=T2.id;
     {% endhighlight %}
 
-
   eqlals
-
 
     {% highlight mysql %}
     SELECT *
     FROM table1 T1 join  table2 T2 using(id);
     {% endhighlight %}
 
-
   equals
-
 
     {% highlight mysql %}
     SELECT *
@@ -69,14 +66,12 @@ FROM table1 T1 natural join table2 T2;
     FROM T1 full outer join T2 on T1.id=T2.id
     {% endhighlight %}
 
-
   equals
 
-
-    {% highlight mysql%}
-    SELECT *
-    FROM T1 left outer join T2 on T1.id=T2.id
-    Union
-    SELECT *
-    FROM T1 right outer join T2 on T1.id=T2.id
-    {% endhighlight %}
+{% highlight mysql%}
+SELECT *
+FROM T1 left outer join T2 on T1.id=T2.id
+Union
+SELECT *
+FROM T1 right outer join T2 on T1.id=T2.id
+{% endhighlight %}

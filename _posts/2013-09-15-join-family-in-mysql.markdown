@@ -28,29 +28,29 @@ FROM table1 T1 natural join table2 T2;
 {% endhighlight %}
 
 ###Inner Join, Self Join and Outer Join###
-
+<br>
 1.  Inner Join
 
-    {% highlight mysql %}
-    SELECT *
-    FROM table1 T1 inner join  table2 T2
-    on T1.id=T2.id;
-    {% endhighlight %}
+  {% highlight mysql %}
+  SELECT *
+  FROM table1 T1 inner join  table2 T2
+  on T1.id=T2.id;
+  {% endhighlight %}
 
   eqlals
 
-    {% highlight mysql %}
-    SELECT *
-    FROM table1 T1 join  table2 T2 using(id);
-    {% endhighlight %}
+  {% highlight mysql %}
+  SELECT *
+  FROM table1 T1 join  table2 T2 using(id);
+  {% endhighlight %}
 
   equals
 
-    {% highlight mysql %}
-    SELECT *
-    FROM table1 T1, table2 T2
-    Where T1.id=T2.id;
-    {% endhighlight %}
+  {% highlight mysql %}
+  SELECT *
+  FROM table1 T1, table2 T2
+  Where T1.id=T2.id;
+  {% endhighlight %}
 
 2.  Self Join
   The purpose of self join is find a pair of atrributes satisfy a condition,
@@ -61,17 +61,17 @@ FROM table1 T1 natural join table2 T2;
   Mysql don't support full outer join, we can use left outer join, right outer 
   join and union to implements full outer join. For example:
 
-    {% highlight mysql %}
-    SELECT *
-    FROM T1 full outer join T2 on T1.id=T2.id
-    {% endhighlight %}
+  {% highlight mysql %}
+  SELECT *
+  FROM T1 full outer join T2 on T1.id=T2.id
+  {% endhighlight %}
 
   equals
 
-    {% highlight mysql%}
-    SELECT *
-    FROM T1 left outer join T2 on T1.id=T2.id
-    Union
-    SELECT *
-    FROM T1 right outer join T2 on T1.id=T2.id
-    {% endhighlight %}
+  {% highlight mysql%}
+  SELECT *
+  FROM T1 left outer join T2 on T1.id=T2.id
+  Union
+  SELECT *
+  FROM T1 right outer join T2 on T1.id=T2.id
+  {% endhighlight %}
